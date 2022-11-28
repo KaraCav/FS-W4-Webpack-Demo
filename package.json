@@ -1,0 +1,27 @@
+{
+  "name": "demo-click-game-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "webpack -w ./main.js -o ./bundle.js",
+    "build": "webpack",
+    "build-watch": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrl240/demo-click-game-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrl240/demo-click-game-webpack/issues"
+  },
+  "homepage": "https://github.com/nrl240/demo-click-game-webpack#readme",
+  "dependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
