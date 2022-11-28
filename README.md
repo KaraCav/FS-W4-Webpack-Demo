@@ -24,9 +24,8 @@ Demo game to show global variables vs. using webpack
 ```
 <script type="text/javascript" src="bundle.js"></script>
 ```
-- To create a bundle with Webpack, use the command ``` npm install```
-  - npm install will add webpack because it's included in our package.json under "dependencies" 
-- Then, run ```npm run build```
+- To create a bundle with Webpack, use the command ``` npm install --save-dev webpack webpack-cli```
+- Then, run ```npm run build``` - that works because the script is already in the package.json
 
 3. We need to tell the app what it should do when we use that command
 - In the ```package.json```, in the "scripts" section, add this:
