@@ -6,12 +6,12 @@ Demo game to show global variables vs. using webpack
 1. When you click on the box 5 times, you win
 - There's a console.log to keep track of the count as well
 2. Students can open the repo and follow along - it doesn't yet have webpack
-- Once forking and cloning, students should ```run npm install```. 
 - If a .gitignore file doesn't exist, make one, and add this:
 ```
 /node_modules
 /bundle.js
 ```
+- We haven't run npm install yet, but once we have we'll want VS Code to ignore those files
 
 ### Number 1 - Why Webpack?
 1. Open inspect tools and type "win()" into the console - looks like we won!
@@ -24,8 +24,7 @@ Demo game to show global variables vs. using webpack
 ```
 <script type="text/javascript" src="bundle.js"></script>
 ```
-- Run ```npm run build```
-  - Hmm... that didn't work
+- First, use the command ```run npm install```, then ```npm run build```
 
 3. We need to tell the app what it should do when we use that command
 - In the ```package.json```, in the "scripts" section, add this:
