@@ -27,25 +27,18 @@ Demo game to show global variables vs. using webpack
 - To install Webpack, use the command ``` npm install --save-dev webpack webpack-cli```
 - Then, run ```npm run build``` 
 - This should FAIL because there's no config file!
-Add the following to a new file called webpack.config.js:
+3. Add the following to a new file called webpack.config.js:
 ```
 const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './client/app.js',
+  entry: './client/main.js',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
   }
 };
-```
-
-3. We need to tell the app what it should do when we use that command
-- In the ```package.json```, in the "scripts" section, add this:
-```
-  "build": "webpack", 
-  "build-watch": "webpack -w"
 ```
 - Now try again: ```npm run build```
 
