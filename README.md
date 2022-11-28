@@ -4,12 +4,18 @@ Demo game to show global variables vs. using webpack
 
 ### Demonstrate the Game
 1. When you click on the box 5 times, you win
-2. There's a console.log to keep track of it
-
+- There's a console.log to keep track of the count as well
+2. Students can open the repo and follow along - it doesn't yet have webpack
+- Once forking and cloning, students should ```run npm install```. 
+- If a .gitignore file doesn't exist, make one, and add this:
+```
+/node_modules
+/bundle.js
+```
 
 ### Number 1 - Why Webpack?
 1. Open inspect tools and type "win()" into the console - looks like we won!
-- Talk about global variables, show this code in index.html:
+- This is because all the variables are global. Take a look at this code in index.html:
 ```
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript" src="game.js"></script>
@@ -28,5 +34,6 @@ Demo game to show global variables vs. using webpack
   "build-watch": "webpack -w"
 ```
 - Now try again: ```npm run build```
+
 ### Number 2 - Why didn't code change?
 1. In game.js, we can uncomment line 15, which updates our counter statement on the page 
